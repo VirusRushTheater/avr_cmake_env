@@ -1,0 +1,1 @@
+/usr/bin/avr-gcc -O3 -DNDEBUG  -mmcu=attiny85 -Wl,--gc-sections -mrelax -Wl,-Map,avr01-blink-attiny85.map CMakeFiles/avr01-blink-attiny85.elf.dir/avr01-blink.c.obj  -o avr01-blink-attiny85.elf 

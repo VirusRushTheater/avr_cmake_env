@@ -1,0 +1,13 @@
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/CMakeFiles/rebuild_cache.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/CMakeFiles/edit_cache.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/src/CMakeFiles/rebuild_cache.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/src/CMakeFiles/edit_cache.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/CMakeFiles/rebuild_cache.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/CMakeFiles/edit_cache.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/CMakeFiles/rebuild_cache.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/CMakeFiles/avr01-blink-attiny85.elf.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/CMakeFiles/upload_avr01-blink.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/CMakeFiles/avr01-blink.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/CMakeFiles/upload_avr01-blink_eeprom.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir
+/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/CMakeFiles/edit_cache.dir
