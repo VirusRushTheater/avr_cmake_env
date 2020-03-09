@@ -1,13 +1,32 @@
 #include <stdint.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
+
+#ifndef F_CPU
+#define F_CPU               8000000UL
+#endif
 #include <util/delay.h>
+
+#include "avr_macros.h"
 
 #define LED                 PB2
 #define DELAY_MS            100
 
-#define UART_BAUD_RATE      19200
-#define UART_FTIMER         F_CPU / 19200
+#define UART_OUT            PB0
+#define UART_IN             PB1
+#define UART_BUFFERSIZE     32
+
+static struct {
+    uint8_t     bitcursor;
+    uint8_t     bytecursor_loop;
+    uint8_t     bytecursor_ri;
+    uint8_t     bytecursor_wo;
+    uint8_t     timerflag;
+    uint8_t     byteready;
+    char        padding_01[1];
+    uint8_t     inputbuffer[UART_BUFFERSIZE];
+    uint8_t     outputbuffer[UART_BUFFERSIZE];
+} uart_adc_vars = {0};
 
 /**
 * This function initializes the ADC 
@@ -35,7 +54,6 @@
 */
 void initADC()
 {
-
     // 8-bit resolution
     // set ADLAR to 1 to enable the Left-shift result (only bits ADC9..ADC2 are available)
     // then, only reading ADCH is sufficient for 8-bit results (256 values)
@@ -56,11 +74,6 @@ void initADC()
         (0 << ADPS0);      // set prescaler to 64, bit 0  
 }
 
-void setupLEDPort ()
-{
-    DDRB |= (1 << LED);
-}
-
 /**
  * Inits timer 1.
  * The timer period can be adjusted by using the prescaler (CS1[3:0]) and the
@@ -75,44 +88,100 @@ void setupLEDPort ()
 static inline void initTimer1(void)
 {
     TCCR1 |=    (1 << CTC1);   // clear timer on compare match
+
+    // Adapted for 19,200 Hz
     TCCR1 |=    (1 << CS13) | (1 << CS12) | (1 << CS11); // clock prescaler 8192
-    OCR1C =     122;           // compare match value 
+    OCR1C =     63;           // compare match value 
+
+    //TCCR1 |=    ((TIMER1_CS3_0 & 0x0f) << CS10);
+    //OCR1C =     (uint8_t) 10;
+
     TIMSK |=    (1 << OCIE1A); // enable compare match interrupt
+}
+
+/**
+ * Inits PB0~3 as outputs and lets it output 0.
+ */
+static inline void initPorts(void)
+{
+    // DDR# -> 0 if input, 1 if output
+    DDRB |=     (1 << UART_OUT);
+    DDRB &=     ~(1 << UART_IN);
+    PORTB &=    ~(0x0F);        // And pulls them down.
+}
+
+static inline void initUART(void)
+{
+    uart_adc_vars.bitcursor = 0x01;
+}
+
+void putc (uint8_t c)
+{
+    uart_adc_vars.outputbuffer[uart_adc_vars.bytecursor_wo++] = c;
+    if (uart_adc_vars.bytecursor_wo == UART_BUFFERSIZE)
+        uart_adc_vars.bytecursor_wo = 0;
 }
 
 int main(void) 
 {
     // initializations 
-	DDRB =      0x0F;            // enable PB0-PB3 as outputs
-	PORTB |=    (1 << LED);    // enable pullup on pushbutton output
-	initTimer1();           // initialize timer registers
-	sei();                  // enable interrupts
+	DDRB =      0x0F;           // enable PB0-PB3 as outputs
+	PORTB |=    (1 << LED);     // enable pullup on pushbutton output
+
+	initTimer1();               // initialize timer registers
+    initADC();
+    initUART();
+	sei();                      // enable interrupts
+
+    ADCSRA |= (1 << ADSC);      // start ADC measurement
 	
 	while(1)
 	{
+        // ADC stuff
+        // ================================================
+        if (!(ADCSRA & (1 << ADSC)))
+        {
+            // play with ADCL and ADCH
+            putc((uint8_t) 'w');
+
+            // Reset ADC
+            ADCSRA |= (1 << ADSC);
+        }
+
+        // UART stuff
+        // ================================================
+        // Only let it pass if the timer allowed it.
+        if (uart_adc_vars.timerflag)
+        {
+
+            // UART output
+            if (uart_adc_vars.outputbuffer[uart_adc_vars.bytecursor_loop] & (1 << uart_adc_vars.bitcursor))
+                PORTB |= (1 << UART_OUT);
+            else
+                PORTB &= ~(1 << UART_OUT);
+            
+            // UART input
+            if (PINB &= (1 << UART_IN))
+                uart_adc_vars.inputbuffer[uart_adc_vars.bytecursor_loop] |= (1 << uart_adc_vars.bitcursor);
+            
+            // Scrolls the circular buffer.
+            if ((++uart_adc_vars.bitcursor) == 8)
+            {
+                uart_adc_vars.bytecursor_loop = (uart_adc_vars.bytecursor_loop + 1) % UART_BUFFERSIZE;
+                uart_adc_vars.byteready = 1;
+            }
+
+            // UART has a byte ready.
+            if (uart_adc_vars.byteready)
+            {
+                uart_adc_vars.inputbuffer[uart_adc_vars.bytecursor_loop] = 0x00;
+            }
+
+            // Clear timer flags.
+            uart_adc_vars.timerflag = 0;
+            uart_adc_vars.byteready = 0;
+        }
 	}
-
-    /*
-    initADC();
-    setupLEDPort();
-
-    while(1)
-    {
-        ADCSRA |= (1 << ADSC);         // start ADC measurement
-        while (ADCSRA & (1 << ADSC) ); // wait till conversion complete 
-
-        if (ADCH <= 128)
-        {
-            // ADC input voltage is more than half of VCC
-            PORTB &= ~(1 << LED);   // Turn off the LED
-        }
-        else
-        {
-            // ADC input voltage is less than half of VCC
-            PORTB |=  (1 << LED);   // Turn on the LED.
-        }
-    }
-    */
 
     return 0;
 }
@@ -122,5 +191,6 @@ int main(void)
  */
 ISR (TIMER1_COMPA_vect)
 {
-	PORTB ^= (1 << LED);
+    // Activates UART stuff.
+    uart_adc_vars.timerflag = 1;
 }
