@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/demos/avr01-blink/avr01-blink.c" "/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/CMakeFiles/avr01-blink-attiny85.elf.dir/avr01-blink.c.obj"
+  "/home/fvera/my_git/avr_cmake_env/demos/avr01-blink/avr01-blink.c" "/home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink/CMakeFiles/avr01-blink-attiny85.elf.dir/avr01-blink.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

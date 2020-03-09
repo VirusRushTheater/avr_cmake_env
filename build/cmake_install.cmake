@@ -1,4 +1,4 @@
-# Install script for directory: /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs
+# Install script for directory: /home/fvera/my_git/avr_cmake_env
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/src/cmake_install.cmake")
-  include("/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/cmake_install.cmake")
+  include("/home/fvera/my_git/avr_cmake_env/build/src/cmake_install.cmake")
+  include("/home/fvera/my_git/avr_cmake_env/build/demos/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/fvera/my_git/avr_cmake_env/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,4 +1,4 @@
-# Install script for directory: /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/demos
+# Install script for directory: /home/fvera/my_git/avr_cmake_env/demos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/cmake_install.cmake")
+  include("/home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink/cmake_install.cmake")
+  include("/home/fvera/my_git/avr_cmake_env/build/demos/avr02-adc/cmake_install.cmake")
 
 endif()
 

@@ -6,5 +6,5 @@ C_FLAGS = -O3 -DNDEBUG   -mmcu=attiny85
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/include -I/usr/lib/avr/include 
+C_INCLUDES = -I/home/fvera/my_git/avr_cmake_env/include -I/usr/lib/avr/include 
 

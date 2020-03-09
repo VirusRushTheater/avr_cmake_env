@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/demos/avr01-blink/avr01-blink.c
+/home/fvera/my_git/avr_cmake_env/demos/avr01-blink/avr01-blink.c
 avr/io.h
 -
 util/delay.h

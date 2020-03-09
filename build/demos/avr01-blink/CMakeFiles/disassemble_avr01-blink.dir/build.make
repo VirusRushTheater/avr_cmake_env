@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs
+CMAKE_SOURCE_DIR = /home/fvera/my_git/avr_cmake_env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build
+CMAKE_BINARY_DIR = /home/fvera/my_git/avr_cmake_env/build
 
 # Utility rule file for disassemble_avr01-blink.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/pr
 include demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/progress.make
 
 demos/avr01-blink/CMakeFiles/disassemble_avr01-blink: demos/avr01-blink/avr01-blink-attiny85.elf
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink && /usr/bin/avr-objdump -h -S avr01-blink-attiny85.elf > avr01-blink.lst
+	cd /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink && /usr/bin/avr-objdump -h -S avr01-blink-attiny85.elf > avr01-blink.lst
 
 disassemble_avr01-blink: demos/avr01-blink/CMakeFiles/disassemble_avr01-blink
 disassemble_avr01-blink: demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/build.make
@@ -67,10 +67,10 @@ demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/build: disassemble_avr0
 .PHONY : demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/build
 
 demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/clean:
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink && $(CMAKE_COMMAND) -P CMakeFiles/disassemble_avr01-blink.dir/cmake_clean.cmake
+	cd /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink && $(CMAKE_COMMAND) -P CMakeFiles/disassemble_avr01-blink.dir/cmake_clean.cmake
 .PHONY : demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/clean
 
 demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/depend:
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/demos/avr01-blink /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fvera/my_git/avr_cmake_env/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fvera/my_git/avr_cmake_env /home/fvera/my_git/avr_cmake_env/demos/avr01-blink /home/fvera/my_git/avr_cmake_env/build /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/demos/avr01-blink
+# Install script for directory: /home/fvera/my_git/avr_cmake_env/demos/avr01-blink
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

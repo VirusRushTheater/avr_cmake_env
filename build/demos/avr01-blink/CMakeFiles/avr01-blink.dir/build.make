@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs
+CMAKE_SOURCE_DIR = /home/fvera/my_git/avr_cmake_env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build
+CMAKE_BINARY_DIR = /home/fvera/my_git/avr_cmake_env/build
 
 # Utility rule file for avr01-blink.
 
@@ -59,17 +59,17 @@ demos/avr01-blink/CMakeFiles/avr01-blink: demos/avr01-blink/avr01-blink-attiny85
 
 
 demos/avr01-blink/avr01-blink-attiny85.hex: demos/avr01-blink/avr01-blink-attiny85.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating avr01-blink-attiny85.hex"
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink && /usr/bin/avr-objcopy -j .text -j .data -O ihex avr01-blink-attiny85.elf avr01-blink-attiny85.hex
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink && /usr/bin/avr-size -C --mcu=attiny85 avr01-blink-attiny85.elf
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fvera/my_git/avr_cmake_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating avr01-blink-attiny85.hex"
+	cd /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink && /usr/bin/avr-objcopy -j .text -j .data -O ihex avr01-blink-attiny85.elf avr01-blink-attiny85.hex
+	cd /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink && /usr/bin/avr-size -C --mcu=attiny85 avr01-blink-attiny85.elf
 
 demos/avr01-blink/avr01-blink-attiny85.lst: demos/avr01-blink/avr01-blink-attiny85.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating avr01-blink-attiny85.lst"
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink && /usr/bin/avr-objdump -d avr01-blink-attiny85.elf > avr01-blink-attiny85.lst
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fvera/my_git/avr_cmake_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating avr01-blink-attiny85.lst"
+	cd /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink && /usr/bin/avr-objdump -d avr01-blink-attiny85.elf > avr01-blink-attiny85.lst
 
 demos/avr01-blink/avr01-blink-attiny85-eeprom.hex: demos/avr01-blink/avr01-blink-attiny85.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating avr01-blink-attiny85-eeprom.hex"
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink && /usr/bin/avr-objcopy -j .eeprom --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0 --no-change-warnings -O ihex avr01-blink-attiny85.elf avr01-blink-attiny85-eeprom.hex
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/fvera/my_git/avr_cmake_env/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating avr01-blink-attiny85-eeprom.hex"
+	cd /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink && /usr/bin/avr-objcopy -j .eeprom --set-section-flags=.eeprom=alloc,load --change-section-lma .eeprom=0 --no-change-warnings -O ihex avr01-blink-attiny85.elf avr01-blink-attiny85-eeprom.hex
 
 avr01-blink: demos/avr01-blink/CMakeFiles/avr01-blink
 avr01-blink: demos/avr01-blink/avr01-blink-attiny85.hex
@@ -85,10 +85,10 @@ demos/avr01-blink/CMakeFiles/avr01-blink.dir/build: avr01-blink
 .PHONY : demos/avr01-blink/CMakeFiles/avr01-blink.dir/build
 
 demos/avr01-blink/CMakeFiles/avr01-blink.dir/clean:
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink && $(CMAKE_COMMAND) -P CMakeFiles/avr01-blink.dir/cmake_clean.cmake
+	cd /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink && $(CMAKE_COMMAND) -P CMakeFiles/avr01-blink.dir/cmake_clean.cmake
 .PHONY : demos/avr01-blink/CMakeFiles/avr01-blink.dir/clean
 
 demos/avr01-blink/CMakeFiles/avr01-blink.dir/depend:
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/demos/avr01-blink /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/demos/avr01-blink/CMakeFiles/avr01-blink.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fvera/my_git/avr_cmake_env/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fvera/my_git/avr_cmake_env /home/fvera/my_git/avr_cmake_env/demos/avr01-blink /home/fvera/my_git/avr_cmake_env/build /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink /home/fvera/my_git/avr_cmake_env/build/demos/avr01-blink/CMakeFiles/avr01-blink.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : demos/avr01-blink/CMakeFiles/avr01-blink.dir/depend
 

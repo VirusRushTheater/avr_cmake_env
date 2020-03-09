@@ -16,6 +16,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../cmake-modules/generic-gcc-avr.cmake"
   "../demos/CMakeLists.txt"
   "../demos/avr01-blink/CMakeLists.txt"
+  "../demos/avr02-adc/CMakeLists.txt"
   "../src/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c"
@@ -112,6 +113,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "demos/CMakeFiles/CMakeDirectoryInformation.cmake"
   "demos/avr01-blink/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "demos/avr02-adc/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -121,4 +123,9 @@ set(CMAKE_DEPEND_INFO_FILES
   "demos/avr01-blink/CMakeFiles/avr01-blink.dir/DependInfo.cmake"
   "demos/avr01-blink/CMakeFiles/upload_avr01-blink_eeprom.dir/DependInfo.cmake"
   "demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/DependInfo.cmake"
+  "demos/avr02-adc/CMakeFiles/avr02-adc.dir/DependInfo.cmake"
+  "demos/avr02-adc/CMakeFiles/upload_avr02-adc.dir/DependInfo.cmake"
+  "demos/avr02-adc/CMakeFiles/avr02-adc-attiny85.elf.dir/DependInfo.cmake"
+  "demos/avr02-adc/CMakeFiles/upload_avr02-adc_eeprom.dir/DependInfo.cmake"
+  "demos/avr02-adc/CMakeFiles/disassemble_avr02-adc.dir/DependInfo.cmake"
   )

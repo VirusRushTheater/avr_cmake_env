@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs
+CMAKE_SOURCE_DIR = /home/fvera/my_git/avr_cmake_env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build
+CMAKE_BINARY_DIR = /home/fvera/my_git/avr_cmake_env/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/CMakeFiles /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/src/CMakeFiles/progress.marks
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/CMakeFiles 0
+	cd /home/fvera/my_git/avr_cmake_env/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/fvera/my_git/avr_cmake_env/build/CMakeFiles /home/fvera/my_git/avr_cmake_env/build/src/CMakeFiles/progress.marks
+	cd /home/fvera/my_git/avr_cmake_env/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fvera/my_git/avr_cmake_env/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/fvera/my_git/avr_cmake_env/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,17 +97,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/fvera/my_git/avr_cmake_env/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/fvera/my_git/avr_cmake_env/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/fvera/my_git/avr_cmake_env/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -129,6 +129,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/fvera/my_git/avr_cmake_env/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

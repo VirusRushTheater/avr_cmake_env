@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs
+CMAKE_SOURCE_DIR = /home/fvera/my_git/avr_cmake_env
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build
+CMAKE_BINARY_DIR = /home/fvera/my_git/avr_cmake_env/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/CMakeFiles /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fvera/my_git/avr_cmake_env/build/CMakeFiles /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fvera/cardionomous2/Felipe/cdn-devs/devices/attiny85/programs/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fvera/my_git/avr_cmake_env/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -175,6 +175,71 @@ disassemble_avr01-blink/fast:
 	$(MAKE) -f demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/build.make demos/avr01-blink/CMakeFiles/disassemble_avr01-blink.dir/build
 .PHONY : disassemble_avr01-blink/fast
 
+#=============================================================================
+# Target rules for targets named avr02-adc
+
+# Build rule for target.
+avr02-adc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 avr02-adc
+.PHONY : avr02-adc
+
+# fast build rule for target.
+avr02-adc/fast:
+	$(MAKE) -f demos/avr02-adc/CMakeFiles/avr02-adc.dir/build.make demos/avr02-adc/CMakeFiles/avr02-adc.dir/build
+.PHONY : avr02-adc/fast
+
+#=============================================================================
+# Target rules for targets named upload_avr02-adc
+
+# Build rule for target.
+upload_avr02-adc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 upload_avr02-adc
+.PHONY : upload_avr02-adc
+
+# fast build rule for target.
+upload_avr02-adc/fast:
+	$(MAKE) -f demos/avr02-adc/CMakeFiles/upload_avr02-adc.dir/build.make demos/avr02-adc/CMakeFiles/upload_avr02-adc.dir/build
+.PHONY : upload_avr02-adc/fast
+
+#=============================================================================
+# Target rules for targets named avr02-adc-attiny85.elf
+
+# Build rule for target.
+avr02-adc-attiny85.elf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 avr02-adc-attiny85.elf
+.PHONY : avr02-adc-attiny85.elf
+
+# fast build rule for target.
+avr02-adc-attiny85.elf/fast:
+	$(MAKE) -f demos/avr02-adc/CMakeFiles/avr02-adc-attiny85.elf.dir/build.make demos/avr02-adc/CMakeFiles/avr02-adc-attiny85.elf.dir/build
+.PHONY : avr02-adc-attiny85.elf/fast
+
+#=============================================================================
+# Target rules for targets named upload_avr02-adc_eeprom
+
+# Build rule for target.
+upload_avr02-adc_eeprom: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 upload_avr02-adc_eeprom
+.PHONY : upload_avr02-adc_eeprom
+
+# fast build rule for target.
+upload_avr02-adc_eeprom/fast:
+	$(MAKE) -f demos/avr02-adc/CMakeFiles/upload_avr02-adc_eeprom.dir/build.make demos/avr02-adc/CMakeFiles/upload_avr02-adc_eeprom.dir/build
+.PHONY : upload_avr02-adc_eeprom/fast
+
+#=============================================================================
+# Target rules for targets named disassemble_avr02-adc
+
+# Build rule for target.
+disassemble_avr02-adc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 disassemble_avr02-adc
+.PHONY : disassemble_avr02-adc
+
+# fast build rule for target.
+disassemble_avr02-adc/fast:
+	$(MAKE) -f demos/avr02-adc/CMakeFiles/disassemble_avr02-adc.dir/build.make demos/avr02-adc/CMakeFiles/disassemble_avr02-adc.dir/build
+.PHONY : disassemble_avr02-adc/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -188,6 +253,11 @@ help:
 	@echo "... avr01-blink"
 	@echo "... upload_avr01-blink_eeprom"
 	@echo "... disassemble_avr01-blink"
+	@echo "... avr02-adc"
+	@echo "... upload_avr02-adc"
+	@echo "... avr02-adc-attiny85.elf"
+	@echo "... upload_avr02-adc_eeprom"
+	@echo "... disassemble_avr02-adc"
 .PHONY : help
 
 

@@ -1,8 +1,15 @@
 # Hashes of file build rules.
-1a1628f3a1cd53a078d247d3b79e387f demos/avr01-blink/CMakeFiles/avr01-blink
-daacf0bc18b36b316e4274ce9c10e92e demos/avr01-blink/CMakeFiles/disassemble_avr01-blink
-ea5ec5b9f43f9c6dac682c0563d40f71 demos/avr01-blink/CMakeFiles/upload_avr01-blink
-6c25795eda91d30d37c0841f9ac4aa76 demos/avr01-blink/CMakeFiles/upload_avr01-blink_eeprom
-33292b12618a2fae8139fb215e5e5c77 demos/avr01-blink/avr01-blink-attiny85-eeprom.hex
-96e6ad64351b2dffeaf9149ff136ae63 demos/avr01-blink/avr01-blink-attiny85.hex
-af4c7db40613569a0af1058bc9c7693a demos/avr01-blink/avr01-blink-attiny85.lst
+17429ee1528f9404728f25b5b410b54b demos/avr01-blink/CMakeFiles/avr01-blink
+49be23b6a6a08837e269cfd12612157e demos/avr01-blink/CMakeFiles/disassemble_avr01-blink
+1706d6b8c9378de8660bb1d610544106 demos/avr01-blink/CMakeFiles/upload_avr01-blink
+28694758dd92586571c0b87915db5ef3 demos/avr01-blink/CMakeFiles/upload_avr01-blink_eeprom
+a566a0e65cb3a2a97ff3af8d0810c0c9 demos/avr01-blink/avr01-blink-attiny85-eeprom.hex
+87135ce440b6064e7fd4dbc318803d26 demos/avr01-blink/avr01-blink-attiny85.hex
+a00eb29ab02ce31863ea0f282ab35018 demos/avr01-blink/avr01-blink-attiny85.lst
+e5a9d74fb29d2447716e7b93725f3b76 demos/avr02-adc/CMakeFiles/avr02-adc
+61884490017c37940c790de4fc19cdf8 demos/avr02-adc/CMakeFiles/disassemble_avr02-adc
+e84485f2f474ef813bc5a362b282e660 demos/avr02-adc/CMakeFiles/upload_avr02-adc
+ed7c5578af42ac96cfdfc7df692adfec demos/avr02-adc/CMakeFiles/upload_avr02-adc_eeprom
+ab8d89da4d1aa3e636dd46acb650f8f4 demos/avr02-adc/avr02-adc-attiny85-eeprom.hex
+8264ab202aa8bac201d890fda2cf8fdc demos/avr02-adc/avr02-adc-attiny85.hex
+0596a88e243d2cf954f047b7ace0fad2 demos/avr02-adc/avr02-adc-attiny85.lst
