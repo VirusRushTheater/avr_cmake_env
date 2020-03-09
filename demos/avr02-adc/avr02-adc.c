@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdint.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -133,21 +134,24 @@ int main(void)
     initUART();
 	sei();                      // enable interrupts
 
+    memset(uart_adc_vars.outputbuffer, 0x12, UART_BUFFERSIZE);
+
     ADCSRA |= (1 << ADSC);      // start ADC measurement
 	
 	while(1)
 	{
+        // ================================================
         // ADC stuff
         // ================================================
         if (!(ADCSRA & (1 << ADSC)))
         {
             // play with ADCL and ADCH
-            putc((uint8_t) 'w');
 
             // Reset ADC
             ADCSRA |= (1 << ADSC);
         }
 
+        // ================================================
         // UART stuff
         // ================================================
         // Only let it pass if the timer allowed it.

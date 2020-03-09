@@ -29,28 +29,28 @@ The CXX compiler identification is GNU, found in "/home/fvera/my_git/avr_cmake_e
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_55880/fast"
-/usr/bin/make -f CMakeFiles/cmTC_55880.dir/build.make CMakeFiles/cmTC_55880.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_3fe5b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3fe5b.dir/build.make CMakeFiles/cmTC_3fe5b.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_55880.dir/testCCompiler.c.obj
-/usr/bin/avr-gcc    -o CMakeFiles/cmTC_55880.dir/testCCompiler.c.obj   -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_55880
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55880.dir/link.txt --verbose=1
-/usr/bin/avr-gcc      CMakeFiles/cmTC_55880.dir/testCCompiler.c.obj  -o cmTC_55880 
+Building C object CMakeFiles/cmTC_3fe5b.dir/testCCompiler.c.obj
+/usr/bin/avr-gcc    -o CMakeFiles/cmTC_3fe5b.dir/testCCompiler.c.obj   -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_3fe5b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3fe5b.dir/link.txt --verbose=1
+/usr/bin/avr-gcc      CMakeFiles/cmTC_3fe5b.dir/testCCompiler.c.obj  -o cmTC_3fe5b 
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0799d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0799d.dir/build.make CMakeFiles/cmTC_0799d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_16cc8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_16cc8.dir/build.make CMakeFiles/cmTC_16cc8.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0799d.dir/CMakeCCompilerABI.c.obj
-/usr/bin/avr-gcc    -o CMakeFiles/cmTC_0799d.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_0799d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0799d.dir/link.txt --verbose=1
-/usr/bin/avr-gcc     -v CMakeFiles/cmTC_0799d.dir/CMakeCCompilerABI.c.obj  -o cmTC_0799d 
+Building C object CMakeFiles/cmTC_16cc8.dir/CMakeCCompilerABI.c.obj
+/usr/bin/avr-gcc    -o CMakeFiles/cmTC_16cc8.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_16cc8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16cc8.dir/link.txt --verbose=1
+/usr/bin/avr-gcc     -v CMakeFiles/cmTC_16cc8.dir/CMakeCCompilerABI.c.obj  -o cmTC_16cc8 
 Using built-in specs.
 Reading specs from /usr/lib/gcc/avr/5.4.0/device-specs/specs-avr2
 COLLECT_GCC=/usr/bin/avr-gcc
@@ -61,8 +61,8 @@ Thread model: single
 gcc version 5.4.0 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/../../../avr/bin/
 LIBRARY_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/../../../avr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0799d' '-specs=device-specs/specs-avr2'
- /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCQxRe3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_0799d -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib CMakeFiles/cmTC_0799d.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_16cc8' '-specs=device-specs/specs-avr2'
+ /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3Zm7ZE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_16cc8 -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib CMakeFiles/cmTC_16cc8.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
@@ -70,14 +70,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(avr-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_0799d/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_0799d.dir/build.make CMakeFiles/cmTC_0799d.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_16cc8/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_16cc8.dir/build.make CMakeFiles/cmTC_16cc8.dir/build]
   ignore line: [make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_0799d.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [/usr/bin/avr-gcc    -o CMakeFiles/cmTC_0799d.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_0799d]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0799d.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/avr-gcc     -v CMakeFiles/cmTC_0799d.dir/CMakeCCompilerABI.c.obj  -o cmTC_0799d ]
+  ignore line: [Building C object CMakeFiles/cmTC_16cc8.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/bin/avr-gcc    -o CMakeFiles/cmTC_16cc8.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_16cc8]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16cc8.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/avr-gcc     -v CMakeFiles/cmTC_16cc8.dir/CMakeCCompilerABI.c.obj  -o cmTC_16cc8 ]
   ignore line: [Using built-in specs.]
   ignore line: [Reading specs from /usr/lib/gcc/avr/5.4.0/device-specs/specs-avr2]
   ignore line: [COLLECT_GCC=/usr/bin/avr-gcc]
@@ -88,22 +88,22 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 5.4.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/../../../avr/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/../../../avr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0799d' '-specs=device-specs/specs-avr2']
-  link line: [ /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCQxRe3.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_0799d -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib CMakeFiles/cmTC_0799d.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_16cc8' '-specs=device-specs/specs-avr2']
+  link line: [ /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3Zm7ZE.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_16cc8 -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib CMakeFiles/cmTC_16cc8.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group]
     arg [/usr/lib/gcc/avr/5.4.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/avr/5.4.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccCQxRe3.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc3Zm7ZE.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lm] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [--pmem-wrap-around=8k] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_0799d] ==> ignore
+    arg [cmTC_16cc8] ==> ignore
     arg [-L/usr/lib/gcc/avr/5.4.0] ==> dir [/usr/lib/gcc/avr/5.4.0]
     arg [-L/usr/lib/gcc/avr/5.4.0/../../../avr/lib] ==> dir [/usr/lib/gcc/avr/5.4.0/../../../avr/lib]
-    arg [CMakeFiles/cmTC_0799d.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_16cc8.dir/CMakeCCompilerABI.c.obj] ==> ignore
     arg [--start-group] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lm] ==> lib [m]
@@ -121,14 +121,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_78ffd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_78ffd.dir/build.make CMakeFiles/cmTC_78ffd.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1ac8b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1ac8b.dir/build.make CMakeFiles/cmTC_1ac8b.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_78ffd.dir/feature_tests.c.obj
-/usr/bin/avr-gcc   -std=c11 -o CMakeFiles/cmTC_78ffd.dir/feature_tests.c.obj   -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_78ffd
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78ffd.dir/link.txt --verbose=1
-/usr/bin/avr-gcc      CMakeFiles/cmTC_78ffd.dir/feature_tests.c.obj  -o cmTC_78ffd 
+Building C object CMakeFiles/cmTC_1ac8b.dir/feature_tests.c.obj
+/usr/bin/avr-gcc   -std=c11 -o CMakeFiles/cmTC_1ac8b.dir/feature_tests.c.obj   -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_1ac8b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ac8b.dir/link.txt --verbose=1
+/usr/bin/avr-gcc      CMakeFiles/cmTC_1ac8b.dir/feature_tests.c.obj  -o cmTC_1ac8b 
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
@@ -141,14 +141,14 @@ make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CM
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_af339/fast"
-/usr/bin/make -f CMakeFiles/cmTC_af339.dir/build.make CMakeFiles/cmTC_af339.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_1ba9f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1ba9f.dir/build.make CMakeFiles/cmTC_1ba9f.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_af339.dir/feature_tests.c.obj
-/usr/bin/avr-gcc   -std=c99 -o CMakeFiles/cmTC_af339.dir/feature_tests.c.obj   -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_af339
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af339.dir/link.txt --verbose=1
-/usr/bin/avr-gcc      CMakeFiles/cmTC_af339.dir/feature_tests.c.obj  -o cmTC_af339 
+Building C object CMakeFiles/cmTC_1ba9f.dir/feature_tests.c.obj
+/usr/bin/avr-gcc   -std=c99 -o CMakeFiles/cmTC_1ba9f.dir/feature_tests.c.obj   -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_1ba9f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ba9f.dir/link.txt --verbose=1
+/usr/bin/avr-gcc      CMakeFiles/cmTC_1ba9f.dir/feature_tests.c.obj  -o cmTC_1ba9f 
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
@@ -161,14 +161,14 @@ make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CM
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_2a698/fast"
-/usr/bin/make -f CMakeFiles/cmTC_2a698.dir/build.make CMakeFiles/cmTC_2a698.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_789ae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_789ae.dir/build.make CMakeFiles/cmTC_789ae.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2a698.dir/feature_tests.c.obj
-/usr/bin/avr-gcc   -std=c90 -o CMakeFiles/cmTC_2a698.dir/feature_tests.c.obj   -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_2a698
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a698.dir/link.txt --verbose=1
-/usr/bin/avr-gcc      CMakeFiles/cmTC_2a698.dir/feature_tests.c.obj  -o cmTC_2a698 
+Building C object CMakeFiles/cmTC_789ae.dir/feature_tests.c.obj
+/usr/bin/avr-gcc   -std=c90 -o CMakeFiles/cmTC_789ae.dir/feature_tests.c.obj   -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_789ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_789ae.dir/link.txt --verbose=1
+/usr/bin/avr-gcc      CMakeFiles/cmTC_789ae.dir/feature_tests.c.obj  -o cmTC_789ae 
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
@@ -179,28 +179,28 @@ make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CM
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c1e42/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c1e42.dir/build.make CMakeFiles/cmTC_c1e42.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_323a4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_323a4.dir/build.make CMakeFiles/cmTC_323a4.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c1e42.dir/testCXXCompiler.cxx.obj
-/usr/bin/avr-g++     -o CMakeFiles/cmTC_c1e42.dir/testCXXCompiler.cxx.obj -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_c1e42
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1e42.dir/link.txt --verbose=1
-/usr/bin/avr-g++       CMakeFiles/cmTC_c1e42.dir/testCXXCompiler.cxx.obj  -o cmTC_c1e42 
+Building CXX object CMakeFiles/cmTC_323a4.dir/testCXXCompiler.cxx.obj
+/usr/bin/avr-g++     -o CMakeFiles/cmTC_323a4.dir/testCXXCompiler.cxx.obj -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_323a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_323a4.dir/link.txt --verbose=1
+/usr/bin/avr-g++       CMakeFiles/cmTC_323a4.dir/testCXXCompiler.cxx.obj  -o cmTC_323a4 
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_cc30d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_cc30d.dir/build.make CMakeFiles/cmTC_cc30d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_01d96/fast"
+/usr/bin/make -f CMakeFiles/cmTC_01d96.dir/build.make CMakeFiles/cmTC_01d96.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_cc30d.dir/CMakeCXXCompilerABI.cpp.obj
-/usr/bin/avr-g++     -o CMakeFiles/cmTC_cc30d.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_cc30d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc30d.dir/link.txt --verbose=1
-/usr/bin/avr-g++      -v CMakeFiles/cmTC_cc30d.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_cc30d 
+Building CXX object CMakeFiles/cmTC_01d96.dir/CMakeCXXCompilerABI.cpp.obj
+/usr/bin/avr-g++     -o CMakeFiles/cmTC_01d96.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_01d96
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01d96.dir/link.txt --verbose=1
+/usr/bin/avr-g++      -v CMakeFiles/cmTC_01d96.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_01d96 
 Using built-in specs.
 Reading specs from /usr/lib/gcc/avr/5.4.0/device-specs/specs-avr2
 COLLECT_GCC=/usr/bin/avr-g++
@@ -211,8 +211,8 @@ Thread model: single
 gcc version 5.4.0 (GCC) 
 COMPILER_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/../../../avr/bin/
 LIBRARY_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/../../../avr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cc30d' '-specs=device-specs/specs-avr2'
- /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqrVsen.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_cc30d -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib CMakeFiles/cmTC_cc30d.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_01d96' '-specs=device-specs/specs-avr2'
+ /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0ubDXZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_01d96 -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib CMakeFiles/cmTC_01d96.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
@@ -220,14 +220,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(avr-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_cc30d/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_cc30d.dir/build.make CMakeFiles/cmTC_cc30d.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_01d96/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_01d96.dir/build.make CMakeFiles/cmTC_01d96.dir/build]
   ignore line: [make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_cc30d.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [/usr/bin/avr-g++     -o CMakeFiles/cmTC_cc30d.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_cc30d]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc30d.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/avr-g++      -v CMakeFiles/cmTC_cc30d.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_cc30d ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_01d96.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/usr/bin/avr-g++     -o CMakeFiles/cmTC_01d96.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_01d96]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01d96.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/avr-g++      -v CMakeFiles/cmTC_01d96.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_01d96 ]
   ignore line: [Using built-in specs.]
   ignore line: [Reading specs from /usr/lib/gcc/avr/5.4.0/device-specs/specs-avr2]
   ignore line: [COLLECT_GCC=/usr/bin/avr-g++]
@@ -238,22 +238,22 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 5.4.0 (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/../../../avr/bin/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/../../../avr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cc30d' '-specs=device-specs/specs-avr2']
-  link line: [ /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccqrVsen.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_cc30d -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib CMakeFiles/cmTC_cc30d.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_01d96' '-specs=device-specs/specs-avr2']
+  link line: [ /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0ubDXZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_01d96 -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib CMakeFiles/cmTC_01d96.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group]
     arg [/usr/lib/gcc/avr/5.4.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/avr/5.4.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccqrVsen.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc0ubDXZ.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lm] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [--pmem-wrap-around=8k] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_cc30d] ==> ignore
+    arg [cmTC_01d96] ==> ignore
     arg [-L/usr/lib/gcc/avr/5.4.0] ==> dir [/usr/lib/gcc/avr/5.4.0]
     arg [-L/usr/lib/gcc/avr/5.4.0/../../../avr/lib] ==> dir [/usr/lib/gcc/avr/5.4.0/../../../avr/lib]
-    arg [CMakeFiles/cmTC_cc30d.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [CMakeFiles/cmTC_01d96.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lm] ==> lib [m]
     arg [--start-group] ==> ignore
@@ -273,14 +273,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_21d8d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_21d8d.dir/build.make CMakeFiles/cmTC_21d8d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ad90b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ad90b.dir/build.make CMakeFiles/cmTC_ad90b.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_21d8d.dir/feature_tests.cxx.obj
-/usr/bin/avr-g++    -std=c++1z -o CMakeFiles/cmTC_21d8d.dir/feature_tests.cxx.obj -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_21d8d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21d8d.dir/link.txt --verbose=1
-/usr/bin/avr-g++       CMakeFiles/cmTC_21d8d.dir/feature_tests.cxx.obj  -o cmTC_21d8d 
+Building CXX object CMakeFiles/cmTC_ad90b.dir/feature_tests.cxx.obj
+/usr/bin/avr-g++    -std=c++1z -o CMakeFiles/cmTC_ad90b.dir/feature_tests.cxx.obj -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_ad90b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad90b.dir/link.txt --verbose=1
+/usr/bin/avr-g++       CMakeFiles/cmTC_ad90b.dir/feature_tests.cxx.obj  -o cmTC_ad90b 
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
@@ -346,14 +346,14 @@ make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CM
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1f1bb/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1f1bb.dir/build.make CMakeFiles/cmTC_1f1bb.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_02869/fast"
+/usr/bin/make -f CMakeFiles/cmTC_02869.dir/build.make CMakeFiles/cmTC_02869.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1f1bb.dir/feature_tests.cxx.obj
-/usr/bin/avr-g++    -std=c++14 -o CMakeFiles/cmTC_1f1bb.dir/feature_tests.cxx.obj -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_1f1bb
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f1bb.dir/link.txt --verbose=1
-/usr/bin/avr-g++       CMakeFiles/cmTC_1f1bb.dir/feature_tests.cxx.obj  -o cmTC_1f1bb 
+Building CXX object CMakeFiles/cmTC_02869.dir/feature_tests.cxx.obj
+/usr/bin/avr-g++    -std=c++14 -o CMakeFiles/cmTC_02869.dir/feature_tests.cxx.obj -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_02869
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02869.dir/link.txt --verbose=1
+/usr/bin/avr-g++       CMakeFiles/cmTC_02869.dir/feature_tests.cxx.obj  -o cmTC_02869 
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
@@ -419,14 +419,14 @@ make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CM
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_ad15f/fast"
-/usr/bin/make -f CMakeFiles/cmTC_ad15f.dir/build.make CMakeFiles/cmTC_ad15f.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_c6148/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c6148.dir/build.make CMakeFiles/cmTC_c6148.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ad15f.dir/feature_tests.cxx.obj
-/usr/bin/avr-g++    -std=c++11 -o CMakeFiles/cmTC_ad15f.dir/feature_tests.cxx.obj -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_ad15f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad15f.dir/link.txt --verbose=1
-/usr/bin/avr-g++       CMakeFiles/cmTC_ad15f.dir/feature_tests.cxx.obj  -o cmTC_ad15f 
+Building CXX object CMakeFiles/cmTC_c6148.dir/feature_tests.cxx.obj
+/usr/bin/avr-g++    -std=c++11 -o CMakeFiles/cmTC_c6148.dir/feature_tests.cxx.obj -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c6148
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c6148.dir/link.txt --verbose=1
+/usr/bin/avr-g++       CMakeFiles/cmTC_c6148.dir/feature_tests.cxx.obj  -o cmTC_c6148 
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
@@ -492,14 +492,14 @@ make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CM
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_48e73/fast"
-/usr/bin/make -f CMakeFiles/cmTC_48e73.dir/build.make CMakeFiles/cmTC_48e73.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f4cd3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f4cd3.dir/build.make CMakeFiles/cmTC_f4cd3.dir/build
 make[1]: Entering directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_48e73.dir/feature_tests.cxx.obj
-/usr/bin/avr-g++    -std=c++98 -o CMakeFiles/cmTC_48e73.dir/feature_tests.cxx.obj -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_48e73
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48e73.dir/link.txt --verbose=1
-/usr/bin/avr-g++       CMakeFiles/cmTC_48e73.dir/feature_tests.cxx.obj  -o cmTC_48e73 
+Building CXX object CMakeFiles/cmTC_f4cd3.dir/feature_tests.cxx.obj
+/usr/bin/avr-g++    -std=c++98 -o CMakeFiles/cmTC_f4cd3.dir/feature_tests.cxx.obj -c /home/fvera/my_git/avr_cmake_env/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f4cd3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4cd3.dir/link.txt --verbose=1
+/usr/bin/avr-g++       CMakeFiles/cmTC_f4cd3.dir/feature_tests.cxx.obj  -o cmTC_f4cd3 
 make[1]: Leaving directory '/home/fvera/my_git/avr_cmake_env/build/CMakeFiles/CMakeTmp'
 
 
